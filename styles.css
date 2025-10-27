@@ -18,6 +18,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /* Apply border-box sizing to all elements - makes width/height calculations easier */
 * {
     box-sizing: border-box;
+    background-color: rgb(194, 194, 194);
 }
 
 /* Set base font size to 16px for consistent em calculations across browsers */
@@ -34,13 +35,23 @@ img {
 
 /* Large heading size for main title */
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:rgb(235, 227, 133);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
+h2 {
+font-size: 1em;
+;
+}
+
 
 /* Medium heading size with gray color for section headers */
 h3 {
-    font-size: 1.75em;
-    color: gray;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
 }
 
 /* Small heading style for individual tip titles - uppercase and centered */
@@ -53,6 +64,9 @@ h4 {
 /* Center align all h3 section headers */
 h3 {
     text-align: center;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     background-color:rgb(235, 227, 133)
 }
 
 /* Set readable line spacing and font size for body text and captions */
@@ -90,8 +104,11 @@ figure {
 /* Style image captions with smaller gray text */
 .head-photo {
     font-size: 1em;
-    color: gray;
+    color: rgb(0, 26, 142);
     margin-left: 15px;
+}
+hr {
+    background-color:rgb(235, 227, 133) ;
 }
 
 /* Style images within icon containers - block display, limited size, centered */
@@ -126,12 +143,15 @@ figure {
     /* Make h3 headings match the width of other content containers */
     h3 {
         max-width: 900px;
+
         /* margin: 0 auto; Centers the heading */
     }
 
     /* Container for the three-column layout - centers the columns as a group */
     .icon-container {
         /* use text-align center to center the inline-block elements */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
         text-align: center; /* Centers the inline-block columns within the container */
         max-width: 900px; /* Matches width of other content */
         margin: 0 auto; /* Centers the entire container */
